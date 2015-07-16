@@ -3,7 +3,7 @@
  */
 .site-nav {
     @include box-shadow(0px 2px 10px 1px $grey-color);
-    background-color: $brand-color-ligth;
+    background-color: $brand-color;
     position: fixed;
     top:0;
     bottom:0;
@@ -38,32 +38,71 @@
         }
       }
     }
+
     .nav-menu{
+      top: auto;
+      bottom: auto;
+      padding-top: $spacing-unit;
+      padding-bottom: $spacing-unit;
       text-align: center;
       background-color: $brand-color-ligth;
       @include box-shadow(inset 0px 0px 10px 1px $grey-color-dark);
-      height:100%;
       ul {
         margin:0;
-        padding-top: $spacing-unit;
         li {
-          list-style:none;
+          list-style:none;              padding-bottom: 5px;
+          padding-top: 5px;
+          padding-bottom: 5px;
           .page-link {
               color: $text-color;
               line-height: $base-line-height;
-
+              letter-spacing: 3px;
               // Gaps between nav items, but not on the first one
               &:not(:last-child) {
                   margin-top: 20px;
               }
+              &:hover {
+                text-decoration: none;
+              }
           }
           &:hover {
             background-color: $comp-color;
+            .page-link {
+              color: $grey-color-light;
+            }
           }
         }
       }
     }
 
+    .nav-footer {
+      bottom: 0;
+      position:relative;
+      display: block;
+      background-color: $brand-color;
+      padding: $spacing-unit 0;
+      height: 300px;
+      max-height: 300px;
+      .contact {
+          .author-link {
+            text-decoration: none;
+            color: $grey-color;
+            margin-bottom: 0;
+            .author {
+              text-align: center;
+            }
+            &:hover {
+              text-decoration: none;
+            }
+          }
+          .social-media-list {
+            position: relative;
+            margin:0 auto 0 auto;
+            text-align: center;
+            list-style: none;
+          }
+      }
+    }
 
     @include media-query($on-palm) {
         position: fixed;
@@ -119,9 +158,8 @@
             padding: 5px 10px;
         }
     }
+
 }
-
-
 
 /**
  * Site footer
