@@ -38,15 +38,24 @@
       }
     }
     .nav-menu{
-      li {
-        .page-link {
-            color: $text-color;
-            line-height: $base-line-height;
+      text-align: center;
+      ul {
+        margin:0;
+        padding-top: $spacing-unit;
+        li {
+          list-style:none;
+          .page-link {
+              color: $text-color;
+              line-height: $base-line-height;
 
-            // Gaps between nav items, but not on the first one
-            &:not(:first-child) {
-                margin-bottom: 20px;
-            }
+              // Gaps between nav items, but not on the first one
+              &:not(:last-child) {
+                  margin-top: 20px;
+              }
+          }
+          &:hover {
+            background-color: $comp-color;
+          }
         }
       }
     }
