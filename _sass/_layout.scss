@@ -50,27 +50,27 @@
       ul {
         margin:0;
         li {
-          list-style:none;              padding-bottom: 5px;
+          list-style:none;
           padding-top: 5px;
           padding-bottom: 5px;
-          .page-link {
-              color: $text-color;
-              line-height: $base-line-height;
-              letter-spacing: 3px;
-              // Gaps between nav items, but not on the first one
-              &:not(:last-child) {
-                  margin-top: 20px;
-              }
-              &:hover {
-                text-decoration: none;
-              }
-          }
           &:hover {
             background-color: $comp-color;
             .page-link {
               color: $grey-color-light;
             }
           }
+        }
+        .page-link {
+            color: $text-color;
+            line-height: $base-line-height;
+            letter-spacing: 3px;
+            // Gaps between nav items, but not on the first one
+            &:not(:last-child) {
+                margin-top: 20px;
+            }
+            &:hover {
+              text-decoration: none;
+            }
         }
       }
     }
