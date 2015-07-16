@@ -2,6 +2,7 @@
  * Site nav
  */
 .site-nav {
+    @include box-shadow(0px 2px 10px 1px $grey-color);
     background-color: $brand-color-ligth;
     position: fixed;
     top:0;
@@ -39,6 +40,9 @@
     }
     .nav-menu{
       text-align: center;
+      background-color: $brand-color-ligth;
+      @include box-shadow(inset 0px 0px 10px 1px $grey-color-dark);
+      height:100%;
       ul {
         margin:0;
         padding-top: $spacing-unit;
