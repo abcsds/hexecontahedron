@@ -166,6 +166,22 @@
 }
 
 /**
+ * Site simple-footer
+ */
+ .simple-footer {
+   border-top: 1px solid $grey-color-light;
+   padding: $spacing-unit 0;
+   .wrapper {
+     .footer-heading {
+      display: inline-block;
+     }
+     .github {
+       display: inline-block;
+     }
+   }
+ }
+
+/**
  * Site footer
  */
 .site-footer {
