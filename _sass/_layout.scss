@@ -185,6 +185,10 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    margin-left: 250px;
+    @include media-query($on-palm) {
+        margin-left: 0px;
+    }
 }
 
 .page-heading {
