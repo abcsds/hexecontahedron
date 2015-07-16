@@ -1,5 +1,6 @@
 # Site settings
 title: Hexecontahedron
+author: Alberto Barradas
 email: abcsds@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   This site is my personal notebook, you can find scraps, notes, and recipies of the stuff I do and want to share.
