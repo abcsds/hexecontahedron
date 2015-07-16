@@ -178,6 +178,11 @@
      .github {
        display: inline-block;
      }
+     .footer-col {
+       .text {
+         text-align: justify;
+       }
+     }
    }
  }
 
@@ -306,6 +311,7 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
+    text-align: justify;
 
     h2 {
         font-size: 32px;
