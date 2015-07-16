@@ -15,9 +15,9 @@
       display: block;
       a {
         text-align: center;
-        img {
-          margin-left: auto;
-          margin-right: auto;
+        .logo {
+          margin:0 auto 0 auto;
+          padding: $spacing-unit 0 $spacing-unit*.5 0;
           display: block;
           width:100px;
           height: 100px;
@@ -30,43 +30,47 @@
         }
         &,
         &:visited {
-            color: $grey-color-dark;
+            color: $text-color;
+        }
+        &:hover {
+          text-decoration: none;
         }
       }
     }
-    .trigger{
-      .nav-menu{
-        li {
-          .page-link {
-              color: $text-color;
-              line-height: $base-line-height;
+    .nav-menu{
+      li {
+        .page-link {
+            color: $text-color;
+            line-height: $base-line-height;
 
-              // Gaps between nav items, but not on the first one
-              &:not(:first-child) {
-                  margin-bottom: 20px;
-              }
-          }
+            // Gaps between nav items, but not on the first one
+            &:not(:first-child) {
+                margin-bottom: 20px;
+            }
         }
       }
     }
 
 
     @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
+        position: fixed;
+        top:0;
+        right:0;
+        left:0;
+        bottom:auto;
+        background-color: $brand-color-ligth;
         border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
 
         .menu-icon {
             display: block;
-            float: right;
+            float: left;
             width: 36px;
             height: 26px;
             line-height: 0;
-            padding-top: 10px;
+            padding-top: 20px;
+            padding-left: 20px;
             text-align: center;
 
             > svg {
@@ -78,13 +82,21 @@
                 }
             }
         }
+        .logo-wrapper {
+          a {
+            .logo {
+              display:none;
+            }
+            .site-title {
 
-        .trigger {
-            clear: both;
-            display: none;
+            }
+          }
+        }
+        .nav-menu {
+          display:none;
         }
 
-        &:hover .trigger {
+        &:hover .nav-menu {
             display: block;
             padding-bottom: 5px;
         }

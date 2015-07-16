@@ -9,12 +9,12 @@
 
   <div class="logo-wrapper">
     <a href="{{ site.baseurl }}">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Rhombic_hexecontahedron.png" alt="{{ site.title }}">
+      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Rhombic_hexecontahedron.png" alt="{{ site.title }}">
       <div class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</div>
     </a>
   </div>
-  <div  class="trigger">
-    <ul class="nav-menu">
+  <div  class="nav-menu">
+    <ul>
       {% for page in site.pages %}
         {% if page.title %}
         <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
