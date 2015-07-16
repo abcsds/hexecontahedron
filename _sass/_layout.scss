@@ -170,7 +170,7 @@
  */
  .simple-footer {
    border-top: 1px solid $grey-color-light;
-   padding: $spacing-unit 0;
+   padding: $spacing-unit/2 0;
    .wrapper {
      .footer-heading {
       display: inline-block;
@@ -260,7 +260,9 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding-top: $spacing-unit;
+    padding-left: 0;
+    padding-right: 0;
     margin-left: 250px;
     @include media-query($on-palm) {
         margin-left: 0px;
@@ -268,7 +270,8 @@
 }
 
 .page-heading {
-    font-size: 20px;
+    font-size: 38px;
+    font-weight: bold;
 }
 
 .post-list {
