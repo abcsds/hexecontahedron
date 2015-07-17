@@ -2,7 +2,6 @@
 layout: post
 title: "La Luna"
 date: "2015-07-17"
-categories: literature
 ---
 # La Leyenda de Coyolxauhqui - La Luna
 La leyenda narra que Coatlicue encontró una bola de plumas cuando barría en la cima del cerro Coatepec, la levantó y la guardó junto a su vientre. Cuando trató de buscarla se dio cuenta de que estaba embarazada.

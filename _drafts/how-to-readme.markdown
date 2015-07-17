@@ -2,7 +2,6 @@
 layout: post
 title: "How to Readme"
 date: "2015-07-17"
-categories: documentation recipie 
 ---
 # What should a README say
 A README file is probably the most important part of any documentation. It is the first contact anyone should have with your code, and it should be clean and structured so even a final user would understand it.

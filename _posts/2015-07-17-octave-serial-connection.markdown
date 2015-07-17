@@ -2,7 +2,6 @@
 layout: post
 title: "Octave Serial Connection"
 date: "2015-07-17"
-categories: octave matlab snippet
 ---
 # How to open a serial connection from Octave
 Small snippet to open a serial connection from [Octave][Octave] on Unix.
