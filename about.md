@@ -19,6 +19,7 @@ In this page you'll find many links, try twitter first.
 As you can see in the footer; the content of this page is protected under Creative Commons Atribution, NonComertial, Share Alike license. If you have any questions about it check [the full license][license] here:
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a>
+
 ## So... why the name?
 A [Rhombic Hexecontahedron][hexe] is a 60-sided stellation of a rhombic triacontahedron (I know, it's super clear now!). Just picture a star-like figure where every spike is formed by three [golden rhombi][rhombi]. It is one of my favorite shapes, and has much more than physical beauty to offer. It looks a bit like this:
 ![Rhombic Hexecontahedron](/app/img/hexe-small.png)
