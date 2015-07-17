@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-![Me]({{ site.url }}/app/img/Profile.jpg)
+![Me](/app/img/Profile.jpg)
 
 ## Who am I?
 I'm a current student of the Computer Systems Engineering Bachelor, at the [Guanajuato University][fimee]. Lead by curiosity, I have been driven to places and knowledges of many different areas. From scenic arts, to software engineering; I’ve had the opportunity to watch and learn from giants. I find myself exposed and attracted to many areas of science and technology. I've focused on using the little I know to create and share experiences.
@@ -20,7 +20,7 @@ As you can see in the footer; the content of this page is protected under Creati
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a>
 ## So... why the name?
 A [Rhombic Hexecontahedron][hexe] is a 60-sided stellation of a rhombic triacontahedron (I know, it's super clear now!). Just picture a star-like figure where every spike is formed by three [golden rhombi][rhombi]. It is one of my favorite shapes, and has much more than physical beauty to offer. It looks a bit like this:
-![Rhombic Hexecontahedron]({{ site.url }}app/img/hexecontahedron.png)
+![Rhombic Hexecontahedron](/app/img/hexecontahedron.png)
 
 [fimee]: http://www.ingenierias.ugto.mx/DI/estructura/
 [github]: https://github.com/abcsds
