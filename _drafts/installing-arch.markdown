@@ -3,6 +3,8 @@ layout: post
 title: "Installing Arch"
 date: "2015-07-17"
 ---
+# Installing Arch
+Installing Arch linux might be very unintuitive the first few times, but after installing it several times you do get used to it. Although it becomes rutinary it's common to miss a step or forget a command; This are some *VERY* compact notes on how to install Arch linux. They're ment as a cookbook just to remind me of the steps needed when installing Arch.
 ```
 cfdisk
 mkfs.ext4
@@ -19,7 +21,7 @@ nano /etc/hostname
 -> arch
 
 nano  /etc/locale.gen
- - >   en_US
+- >   en_US
 
 locale=gen
 echo LANG=en_US.UTF-8 > /etc/locale.conf
