@@ -12,6 +12,7 @@ I'm a current student of the Computer Systems Engineering Bachelor, at the [Guan
 ## What do I do?
 I'm no stranger to Spanish, German, specialized areas of biosignals, social engineering, philosophy, psychology, pedagogy, and some other more unusual areas of knowledge. I love to explain things to kids, and that has made me quite a good science divulgator.
 I'm also a web developper so, if you'd like to see my work you can check it out in my github:  [abcsds][github]
+
 ## Why a blog?
 I'm a believer of information openness, and social equity. I want to take information and technologies to wherever they're needed, and this is a good place to star. My notes might sometimes not be very clear, and could even be useless to your particular case, but don't be afraid to ask me if something seems foggy.
 
