@@ -10,3 +10,4 @@ github_username:  abcsds
 
 # Build settings
 markdown: kramdown
+paginate: 5
