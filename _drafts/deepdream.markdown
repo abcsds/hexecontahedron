@@ -22,11 +22,15 @@ sudo pip install --upgrade pip
 sudo pip install --upgrade numpy
 cd caffe
 ```
+
 Before compiling caffe we must configure it for the specific requirements:
+
 ```
 cp Makefile.config.example Makefile.config
 ```
+
 With our prefered text editor there are a couple things to do:
+
 - Uncomment `CPU_ONLY := 1` since CUDA is not being used.
 - Add the included directories and libraries for hdf5
 
@@ -42,15 +46,18 @@ Once this has been done we must add the libraries to our path. We can do so by w
 export LD_LIBRARY_PATH=/usr/local/lib
 export PYTHONPATH="${PYTHONPATH}:/home/abcsds/caffe/python"
 ```
+
 Don't forget to source it: `source ~/.bashrc`.
 ## Building Caffe
 Now that Caffe's dependencies have been met, build by typing the following code in the Caffe project folder(replaceing x by the number of cores yout processor has):
+
 ```
 make all -jx
 make test -jx
 make runtest -jx
 make pycaffe -jx
 ```
+
 ## Runing DeepDream
 All dependencies for the DeepDream librariy should be met by now, and we can run the code on the repo:
 
@@ -60,4 +67,5 @@ wget -P ~/caffe/models/bvlc_googlenet http://dl.caffe.berkeleyvision.org/bvlc_go
 cd ~/deepdream
 ipython notebook ./dream.ipynb
 ```
+
 This last instruction will open an IPython notebook on your browser, where you can click every snippet of code and run by clicking the play icon on the top of the content section.
