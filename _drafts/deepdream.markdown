@@ -2,7 +2,7 @@
 layout: post
 title: "DeepDream"
 date: "2015-07-17"
-categories: google recipie deepdream linux ai
+tags: google recipie deepdream linux ai
 ---
 # Running Google's DeepDream
 No cognitivist could avoid noticing google's new demonstrations on Deep Learning posted on their [research blog](http://googleresearch.blogspot.mx/2015/06/inceptionism-going-deeper-into-neural.html) this june. Images all over the web like those on google's own [gallery](https://photos.google.com/share/AF1QipPX0SCl7OzWilt9LnuQliattX4OUCj_8EP65_cTVnBmS1jnYgsGQAieQUc1VQWdgQ?key=aVBxWjhwSzg2RjJWLWRuVFBBZEN1d205bUdEMnhB) showing what neural networks "see" when trying to make sense of images make everyone wonder how could a machine make such beautiful, weird, and surprisingly familiar images.

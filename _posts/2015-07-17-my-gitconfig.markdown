@@ -2,7 +2,7 @@
 layout: post
 title: "My gitconfig"
 date: "2015-07-17"
-categories: git config linux mac
+tags: git config linux mac
 ---
 # My .gitconfig
 This file belongs to the user home folder, adds a password cache, and a small alias for pretty log print.
