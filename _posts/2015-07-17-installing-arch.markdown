@@ -8,6 +8,7 @@ tags: linux recipie
 Installing Arch linux might be very unintuitive the first few times, but after installing it several times you do get used to it. Although it becomes rutinary it's common to miss a step or forget a command; This are some *VERY* compact notes on how to install Arch linux. They're ment as a cookbook just to remind me of the steps needed when installing Arch.
 
 ```
+
 cfdisk
 mkfs.ext4
 mkswapge
@@ -52,4 +53,5 @@ reboot
 
 
 FONT=Lat2-Terminus16 to /etc/vconsole.conf
+
 ```
