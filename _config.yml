@@ -3,11 +3,16 @@
 # 2. config.build.yml
 # 3. config.yml
 
-name: hexecontahedron
+name: Hexecontahedron
 description: This site is my personal notebook, you can find scraps, notes, and recipies of the stuff I do and want to share.
 author:
   name: Alberto Barradas
   email: abcsds@gmail.com
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "hexecontahedron.com" # the base hostname & protocol for your site
+twitter_username: abcsds
+github_username:  abcsds
 
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
