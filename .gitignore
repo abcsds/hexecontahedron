@@ -1,3 +1,7 @@
+# Unignore everything
+!**/*
+
+# Re-ignore things
 # .gitignore for Yeoman-Jekyll projects
 
 # Ignore hidden folders #

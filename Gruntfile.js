@@ -284,6 +284,7 @@ module.exports = function (grunt) {
           branch: 'gh-pages',
           commit: true,
           push: true
+          message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
         }
       }
     },
