@@ -2,3 +2,5 @@
 _site
 node_modules
 app/_bower_components
+.tmp
+dist
