@@ -67,7 +67,7 @@ All dependencies for the DeepDream librariy should be met by now, and we can run
 
 ```
 git clone https://github.com/google/deepdream.git
-wget -P ~/caffe/models/bvlc_googlenet http://dl.caffe.berkeleyvision.org/bvlc_googlenet.caffemodel
+wget -P ~/github/caffe/models/bvlc_googlenet http://dl.caffe.berkeleyvision.org/bvlc_googlenet.caffemodel
 cd ~/deepdream
 ipython notebook ./dream.ipynb
 ```
