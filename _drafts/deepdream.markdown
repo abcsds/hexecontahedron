@@ -45,7 +45,10 @@ Once this has been done we must add the libraries to our path. We can do so by w
 
 ```
 export LD_LIBRARY_PATH=/usr/local/lib
+export PYTHONPATH="${PYTHONPATH}:/home/abcsds/github/caffe/python"
 export PYTHONPATH="${PYTHONPATH}:/home/abcsds/caffe/python"
+export PYTHONPATH="${PYTHONPATH}:/home/abcsds/github/caffe/distribute/python"
+export PYTHONPATH="${PYTHONPATH}:/home/abcsds/.pycaffe"
 ```
 
 Don't forget to source it: `source ~/.bashrc`.
