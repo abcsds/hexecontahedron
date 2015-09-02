@@ -171,8 +171,6 @@ pre {
     }
 }
 
-
-
 /**
  * Clearfix
  */
@@ -184,8 +182,6 @@ pre {
         clear: both;
     }
 }
-
-
 
 /**
  * Icons
@@ -202,10 +198,4 @@ pre {
             fill: $grey-color;
         }
     }
-}
-
-@mixin box-shadow($shadows...) {
-  -moz-box-shadow: $shadows;
-  -webkit-box-shadow: $shadows;
-  box-shadow: $shadows;
 }
