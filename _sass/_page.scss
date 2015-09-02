@@ -1,0 +1,40 @@
+
+/**
+ * Page content
+ */
+.page-content {
+    padding-top: $spacing-unit;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 250px;
+    @include media-query($on-palm) {
+        margin-left: 0px;
+    }
+}
+
+.page-heading {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+        h1 {
+          display: none;
+        }
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+.post-link {
+    display: block;
+    font-size: 24px;
+}
