@@ -14,9 +14,9 @@
 }
 
 @mixin transition-all() {
-    -webkit-transition: all 0.35s;
-    -moz-transition: all 0.35s;
-    transition: all 0.35s;
+    -webkit-transition: all $transition-normal;
+    -moz-transition: all $transition-normal;
+    transition: all $transition-normal;
 }
 
 @mixin background-cover() {
@@ -27,11 +27,11 @@
 }
 
 @mixin sans-serif-font() {
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
 @mixin serif-font() {
-	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+	font-family: 'Merriweather', Georgia, Palatino, Times, serif;
 }
 
 @mixin box-shadow($shadows...) {

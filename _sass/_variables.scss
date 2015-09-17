@@ -1,31 +1,40 @@
 // Variables
 
-$theme-primary: #e4002e;
-$theme-secondary: #e53d24;
-$theme-dark: #222;
-$theme-gray: #777;
+// Colorscheme
+$text-color:       #111;
 
-$base-font-family: Helvetica, Arial, sans-serif;
+$theme-primary:   #006A6A;
+$theme-primary-dark:   darken($theme-primary,10%);
+$theme-primary-light: lighten($theme-primary, 10%);
+
+$theme-secondary: #B69B09;
+$theme-secondary-dark: darken($theme-secondary,10%);
+$theme-terciary: #770C5A;
+
+$background-color: #FDFDFD;
+
+$theme-dark:       #222;
+$theme-gray:       #828282;
+$theme-gray-light: lighten($theme-gray, 40%);
+$theme-gray-dark:  darken($theme-gray, 25%);
+
+
+// Typography
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #FDFDFD;
-$brand-color:      #006A6A;
-$brand-color-ligth:lighten($brand-color, 5%);
-
-$comp-color:       #B64300;
-$comp-color-dark:  darken($comp-color,10%);
-
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+// Transitions
+$transition-normal: 0.35s;
 
 // Width of the content area
 $content-width:    800px;
-$on-palm:          600px;
-$on-laptop:        800px;
+
+// Media query sizes
+$on-mobile:        320px;  // xsm
+$on-palm:          480px;  // sm
+$on-tablet:        768px;  // md
+$on-laptop:        992px;  // lg
+$on-desktop:       1200px; // xlg
