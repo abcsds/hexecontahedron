@@ -1,16 +1,19 @@
 /**
  * HTML overflo
  */
- html, body {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    > div {
-       height: 100%;
-       overflow: scroll;
-       -webkit-overflow-scrolling: touch;
-    }
- }
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  > div {
+     height: 100%;
+     overflow: scroll;
+     -webkit-overflow-scrolling: touch;
+  }
+}
+a {
+  color:theme-secondary;
+}
 
 /**
  * Site nav
@@ -21,7 +24,7 @@
     position: fixed;
     top:0;
     bottom:0;
-    min-width: 250px;
+    min-width: 300px;
     min-height: 100%;
     margin-bottom: 0px;
     border-radius: 0px;
@@ -39,6 +42,7 @@
     .logo-wrapper {
       background-color: $theme-primary;
       display: block;
+      padding: 10px 0px;
       a {
         text-align: center;
         .logo {
@@ -48,50 +52,59 @@
           max-width:100px;
           max-height: 100px;
         }
-        .site-title {
-            display: block;
-            font-size: 26px;
-            line-height: 56px;
-            letter-spacing: -1px;
-        }
-        &,
-        &:visited {
-            color: $text-color;
-        }
-        &:hover {
-          text-decoration: none;
-        }
       }
     }
-
+    .site-title {
+        display: block;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 56px;
+        // letter-spacing: -1px;
+        text-align: center;
+        :visited {
+          color: $theme-gray-light;
+        }
+        :hover {
+          text-decoration: none;
+        }
+        a {
+          color: $theme-gray-light;
+        }
+    }
+    .navbar-collapse {
+      padding-right: 0;
+      padding-left: 0;
+    }
     .nav-menu{
       top: auto;
       bottom: auto;
       padding-top: $spacing-unit;
       padding-bottom: $spacing-unit;
       text-align: center;
-      background-color: $theme-primary-light;
-      @include box-shadow(inset 0px 0px 10px 1px $theme-gray-dark);
+      // @include box-shadow(inset 0px 0px 10px 1px $theme-gray-dark);
       ul {
-        margin:0;
+        margin: 0;
+        width: 100%;
         li {
           list-style:none;
           padding-top: 5px;
           padding-bottom: 5px;
+          // font-weight: ;
+          font-size: 20px;
           &:hover {
-            background-color: $theme-secondary;
+            background-color: $theme-secondary-light;
             .page-link {
               color: $theme-gray-light;
             }
           }
         }
         .page-link {
-            color: $text-color;
+            color: $theme-gray-light;
             line-height: $base-line-height;
             letter-spacing: 3px;
             // Gaps between nav items, but not on the first one
             &:not(:last-child) {
-                margin-top: 20px;
+                margin-top: 18px;
             }
             &:hover {
               text-decoration: none;
@@ -102,16 +115,15 @@
 
     .nav-footer {
       bottom: 0;
-      position:relative;
+      position:absolute;
       display: block;
-      background-color: $theme-primary;
       padding: $spacing-unit 0;
-      height: 300px;
-      max-height: 300px;
+      width: 100%;
+      max-height: 200px;
       .contact {
           .author-link {
             text-decoration: none;
-            color: $theme-gray;
+            color: $theme-gray-light;
             margin-bottom: 0;
             .author {
               text-align: center;
@@ -125,20 +137,29 @@
             margin:0 auto 0 auto;
             text-align: center;
             list-style: none;
+            .svg {
+              color: $theme-gray-light;
+              path {
+                  fill: $theme-gray-light;
+              }
+            }
+            .username {
+              color: $theme-gray-light;
+            }
           }
       }
     }
 
     @include media-query($on-palm) {
-        position: fixed;
-        top:0;
-        right:0;
-        left:0;
-        bottom:auto;
-        background-color: $theme-primary-light;
-        border: 1px solid $theme-gray-light;
-        border-radius: 5px;
-        text-align: right;
+        // position: fixed;
+        // top:0;
+        // right:0;
+        // left:0;
+        // bottom:auto;
+        // background-color: $theme-primary;
+        // border: 1px solid $theme-gray-light;
+        // border-radius: 5px;
+        // text-align: right;
 
         .menu-icon {
             display: block;
@@ -155,7 +176,7 @@
                 height: 15px;
 
                 path {
-                    fill: $theme-gray-dark;
+                    fill: $theme-gray-light;
                 }
             }
         }
@@ -164,13 +185,12 @@
             .logo {
               display:none;
             }
-            .site-title {
-
-            }
           }
         }
+        .site-title {
+        }
         .nav-menu {
-          display:none;
+          // display:none;
         }
 
         &:hover .nav-menu {
@@ -184,7 +204,7 @@
             padding: 5px 10px;
         }
         .nav-footer {
-          display: none;
+          // display: none;
         }
     }
     @include media-query($on-tablet) {

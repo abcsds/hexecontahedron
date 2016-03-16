@@ -3,13 +3,14 @@
 // Colorscheme
 $text-color:       #111;
 
-$theme-primary:   #006A6A;
-$theme-primary-dark:   darken($theme-primary,10%);
-$theme-primary-light: lighten($theme-primary, 10%);
+$theme-primary:   #276162;
+$theme-primary-light: lighten($theme-primary, 30%);
+$theme-primary-dark: darken($theme-primary, 10%);
 
-$theme-secondary: #B69B09;
-$theme-secondary-dark: darken($theme-secondary,10%);
-$theme-terciary: #770C5A;
+$theme-secondary: #0D273F;
+$theme-secondary-light: lighten($theme-secondary,30%);
+$theme-terciary: #EFB532;
+$theme-cuaternary: #070D8D;
 
 $background-color: #FDFDFD;
 
