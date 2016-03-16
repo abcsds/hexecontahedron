@@ -34,6 +34,11 @@ a {
     min-height: 100%;
     margin-bottom: 0px;
     border-radius: 0px;
+    a {
+      :hover {
+        color: $theme-gray-light;
+      }
+    }
     .container-fluid {
       padding: 0px 0px;
     }
@@ -135,7 +140,7 @@ a {
               text-align: center;
             }
             &:hover {
-              text-decoration: none;
+              text-decoration: underline;;
             }
           }
           .social-media-list {
@@ -143,6 +148,9 @@ a {
             margin:0 auto 0 auto;
             text-align: center;
             list-style: none;
+            :hover {
+              text-decoration: underline;
+            }
             .svg {
               color: $theme-gray-light;
               path {
@@ -235,6 +243,7 @@ a {
        display: inline-block;
      }
      .footer-col {
+       padding: 0;
        .text {
          text-align: justify;
        }
