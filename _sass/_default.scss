@@ -12,7 +12,13 @@ html, body {
   }
 }
 a {
-  color:theme-secondary;
+  color:$theme-secondary;
+  :visited {
+    color: $theme-secondary-light;
+  }
+  :hover {
+    color: $theme-cuaternary;
+  }
 }
 
 /**

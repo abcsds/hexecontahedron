@@ -9,7 +9,7 @@ permalink: /about/
 I'm a current student of the Computer Systems Engineering Bachelor, at the [Guanajuato University][fimee]. Lead by curiosity, I have been driven to places and knowledges of many different areas. From scenic arts, to software engineering; I’ve had the opportunity to watch and learn from giants. I find myself exposed and attracted to many areas of science and technology. I've focused on using the little I know to create and share experiences.
 
 ## What do I do?
-I'm no stranger to Spanish, German, specialized areas of biosignals, social engineering, philosophy, psychology, pedagogy, and some other more unusual areas of knowledge. I love to explain things to kids, and that has made me quite a good science divulgator.
+I'm no stranger to Spanish, German, specialized areas of biosignals, social engineering, philosophy, psychology, pedagogy, and some other more unusual areas of knowledge. I love to explain things to kids and adults, and that has made me quite a good science divulgator.
 I'm also a web developper so, if you'd like to see my work you can check it out in my github:  [abcsds][github]
 
 ## Why a blog?
