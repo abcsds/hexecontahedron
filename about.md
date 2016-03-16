@@ -3,8 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-
-![Me](/app/img/profile.png)
+![me](/app/img/profile.png)
 
 ## Who am I?
 I'm a current student of the Computer Systems Engineering Bachelor, at the [Guanajuato University][fimee]. Lead by curiosity, I have been driven to places and knowledges of many different areas. From scenic arts, to software engineering; I’ve had the opportunity to watch and learn from giants. I find myself exposed and attracted to many areas of science and technology. I've focused on using the little I know to create and share experiences.
@@ -14,7 +13,7 @@ I'm no stranger to Spanish, German, specialized areas of biosignals, social engi
 I'm also a web developper so, if you'd like to see my work you can check it out in my github:  [abcsds][github]
 
 ## Why a blog?
-I'm a believer of information openness, and social equity. I want to take information and technologies to wherever they're needed, and this is a good place to star. My notes might sometimes not be very clear, and could even be useless to your particular case, but don't be afraid to ask me if something seems foggy.
+I'm a believer of information openness, and social equality. I want to take information and technologies to wherever they're needed, and this is a good place to star. My notes might sometimes not be very clear, and could even be useless to your particular case, but don't be afraid to ask me if something seems foggy.
 
 ## How to contact me?
 In this page you'll find many links, try twitter first.
