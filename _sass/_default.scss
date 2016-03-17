@@ -1,5 +1,5 @@
 /**
- * HTML overflo
+ * HTML overflow
  */
 html, body {
   width: 100%;
@@ -12,13 +12,16 @@ html, body {
   }
 }
 a {
-  color:$theme-secondary;
+  color:$theme-secondary-light;
   :visited {
-    color: $theme-secondary-light;
-  }
-  :hover {
     color: $theme-cuaternary;
   }
+  :hover {
+    color: $theme-secondary;
+  }
+}
+p {
+  font-size: large;
 }
 
 /**

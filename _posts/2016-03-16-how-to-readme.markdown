@@ -2,7 +2,7 @@
 layout: post
 title: "How to README"
 date: "2016-03-16 16:18:40 -0600"
-tags: documentation recipie
+tags: documentation english
 ---
 A README file is probably the most important part of any documentation. It is the first contact anyone should have with your code, and it should be clean and structured so even a final user could understand it.
 If you are writing the readme for your code you shoul consider adding these points:
