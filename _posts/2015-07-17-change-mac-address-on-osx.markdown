@@ -2,7 +2,7 @@
 layout: post
 title: "Change MAC address on OSx"
 date: "2015-07-17"
-tags: mac osx networks english
+tags: mac, osx, networks, english
 ---
 Changeing your MAC address is important before doing any pentesting work. MacOSX offers a way of doing it with the default networking tool `ifconfig`. We will need super user access, though:
 

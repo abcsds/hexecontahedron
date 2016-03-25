@@ -143,7 +143,20 @@ p {
               text-align: center;
             }
             &:hover {
-              text-decoration: underline;;
+              text-decoration: underline;
+            }
+          }
+          .rss-subscribe {
+            width: 100%;
+            text-align: center;
+            color: $theme-gray-light;
+            a:hover {
+              color: $theme-gray-light;
+              text-decoration: none;
+            }
+            a {
+              text-decoration: underline;
+              color: $theme-secondary-light;
             }
           }
           .social-media-list {
