@@ -6,6 +6,7 @@ date: "2016-03-25 00:47:00 -0600"
 Named after [Augustin-Jean Fresnel](https://en.wikipedia.org/wiki/Augustin-Jean_Fresnel) Fresnel integrals are:
 
 $$ x(t) = C(t) = \int_{0}^{t} cos(\dfrac{\pi}{2}s^2) ds $$
+
 $$ y(t) = S(t) = \int_{0}^{t} sin(\dfrac{\pi}{2}s^2) ds $$
 
 You can read more about them [here](https://en.wikipedia.org/wiki/Fresnel_integral).
