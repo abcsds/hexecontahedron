@@ -19,36 +19,34 @@
       </div>
     </div><!-- /.navbar-header -->
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <div class="nav-menu">
-        <ul class="nav navbar-nav pages">
-          <li><a class="page-link" href="http://{{ site.url }}">Home</a></li>
-          {% for page in site.pages %}
-            {% if page.title %}
-            <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </div><!-- /.nav-menu -->
+    <div class="nav-menu">
+      <ul class="nav navbar-nav pages">
+        <li><a class="page-link" href="http://{{ site.url }}">Home</a></li>
+        {% for page in site.pages %}
+          {% if page.title %}
+          <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+        <li><a class="page-link" href="http://{{ site.url }}/search">Search</a></li>
+      </ul>
+    </div><!-- /.nav-menu -->
 
-      <div class="nav-footer pull-down">
-        <div class="contact">
-          <a class="author-link" href="{{ site.personal_website }}"><h4 class="author">{{ site.author }}</h4></a>
-          <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-          <p class="social">
-            <a href="https://github.com/{{ site.github_username }}">
-              <i class="fa fa-2x fa-github gh" aria-hidden="true"></i>
-            </a>
-            <a href="https://twitter.com/{{ site.twitter_username }}">
-              <i class="fa fa-2x fa-twitter-square tw" aria-hidden="true"></i>
-            </a>
-            <a href="https://plus.google.com/{{ site.googlep_username }}">
-              <i class="fa fa-2x fa-google-plus-official gp" aria-hidden="true"></i>
-            </a>
-          </p>
-        </div> <!--  /.contact -->
-      </div> <!--  /.nav-footer -->
-    </div><!-- /.navbar-collapse -->
+    <div class="nav-footer pull-down">
+      <div class="contact">
+        <a class="author-link" href="{{ site.personal_website }}"><h4 class="author">{{ site.author }}</h4></a>
+        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+        <p class="social">
+          <a href="https://github.com/{{ site.github_username }}">
+            <i class="fa fa-2x fa-github gh" aria-hidden="true"></i>
+          </a>
+          <a href="https://twitter.com/{{ site.twitter_username }}">
+            <i class="fa fa-2x fa-twitter-square tw" aria-hidden="true"></i>
+          </a>
+          <a href="https://plus.google.com/{{ site.googlep_username }}">
+            <i class="fa fa-2x fa-google-plus-official gp" aria-hidden="true"></i>
+          </a>
+        </p>
+      </div> <!--  /.contact -->
+    </div> <!--  /.nav-footer -->
   </div> <!-- /.container fluid  -->
 </nav>
-<!-- <div class="menu-button" href="#menu"><i class="fa fa-bars"></i></div> -->

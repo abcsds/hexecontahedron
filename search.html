@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div class="container-fluid index">
+  <div class="row index all-posts">
+    <h1 class="page-heading">Search</h1>
+    <div id="search-container">
+      <input type="text" id="search-input" placeholder="Type here...">
+      <div class="col-md-12 content-panel articles">
+        <ul id="results-container" class="post-list">
+          <small>Start typing to see some results</small>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="{{ site.static_folder }}/js/jekyll-search.js" type="text/javascript"></script>
+
+<li>
+  <h2>
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+      {{ post.title }}
+    </a>
+  </h2>
+  <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <p class="post-excerpt">{{ post.excerpt }}</p>
+  <br>
+</li>
+
+<script type="text/javascript">
+  SimpleJekyllSearch.init({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    dataSource: '{{ site.baseurl }}/search.json',
+    searchResultTemplate: '<li><h2><a class="post-link" href="{url}" title="{title}">{title}<\/a><\/h2><span class="post-meta">{date}<\/span><br/><\/li>',
+    noResultsText: 'No results found',
+    limit: 10,
+    fuzzy: true,
+  })
+</script>

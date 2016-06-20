@@ -34,6 +34,7 @@ p {
     top:0;
     bottom:0;
     min-width: 300px;
+    max-width: 300px;
     min-height: 100%;
     margin-bottom: 0px;
     border-radius: 0px;
@@ -98,7 +99,6 @@ p {
       // @include box-shadow(inset 0px 0px 10px 1px $theme-gray-dark);
       ul {
         margin: 0;
-        width: 100%;
         li {
           width: 100%;
           list-style:none;
@@ -194,6 +194,18 @@ p {
     color: #4078c0;
   }
 }
+/**
+ * Site Search
+ */
+#search-container {
+  input {
+    width: 100%;
+    font-size: 1.5 * $base-font-size;
+  }
+  #results-container {
+  }
+}
+
 /**
  * Site simple-footer
  */
