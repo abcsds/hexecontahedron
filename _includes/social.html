@@ -1,0 +1,29 @@
+<p class="social">
+  <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | replace:'/index.html','' | prepend: site.baseurl | prepend: site.url }}" target="_blank">
+    <i class="fa fa-2x fa-facebook-square fb" aria-hidden="true"></i>
+  </a>
+  <a href="https://twitter.com/intent/tweet?text={% if page.title %}
+    {{ page.title | strip_html | strip_newlines | uri_escape }}
+  {% else %}
+    {{ site.title | strip_html | strip_newlines | uri_escape }}
+  {% endif %}%20%40abcsds" target="_blank">
+    <i class="fa fa-2x fa-twitter-square tw" aria-hidden="true"></i>
+  </a>
+  <a href="https://plus.google.com/share?url=http%3A//{{ page.url | replace:'/index.html','' | prepend: site.baseurl | prepend: site.url }}" target="_blank">
+    <i class="fa fa-2x fa-google-plus-official gp" aria-hidden="true"></i>
+  </a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//{{ page.url | replace:'/index.html','' | prepend: site.baseurl | prepend: site.url }}&title={% if page.title %}
+    {{ page.title | strip_html | strip_newlines | uri_escape }}
+  {% else %}
+    {{ site.title | strip_html | strip_newlines | uri_escape }}
+  {% endif %}" target="_blank">
+    <i class="fa fa-2x fa-linkedin-square li" aria-hidden="true"></i>
+  </a>
+  <a href="http://www.stumbleupon.com/submit?url=http://{{ page.url | replace:'/index.html','' | prepend: site.baseurl | prepend: site.url }}&title={% if page.title %}
+    {{ page.title | strip_html | strip_newlines | uri_escape }}
+  {% else %}
+    {{ site.title | strip_html | strip_newlines | uri_escape }}
+  {% endif %}" target="_blank">
+    <i class="fa fa-2x fa-stumbleupon-circle su" aria-hidden="true"></i>
+  </a>
+</p>
