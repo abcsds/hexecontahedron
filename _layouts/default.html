@@ -24,4 +24,16 @@
     ga('send', 'pageview');
 
   </script>
+  <script type="text/javascript">
+     $(document).ready(function() {
+        $("#my-menu").trigger("open.mm");
+        $("#my-menu").mmenu().on( "closed.mm", function() {
+              $(".menu-button").show();
+           });
+        $(".menu-button").click(function() {
+          $(".menu-button").hide();
+          $("#my-menu").trigger("open.mm");
+        });
+     });
+  </script>
 </html>

@@ -7,8 +7,9 @@ url: "hexecontahedron.com"
 image: "http://hexecontahedron.com/static/img/hexe-small.png"
 twitter_username: abcsds
 github_username:  abcsds
+googlep_username:  "+AlbertoBarradasC"
 personal_website: "http://AlbertoBarradas.com"
-static_folder: '/static'
+static_folder: "/static"
 
 # Build settings
 markdown: kramdown

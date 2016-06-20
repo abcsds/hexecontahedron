@@ -100,19 +100,12 @@ p {
         margin: 0;
         width: 100%;
         li {
+          width: 100%;
           list-style:none;
           padding-top: 5px;
           padding-bottom: 5px;
-          // font-weight: ;
           font-size: 20px;
-          &:hover {
-            background-color: $theme-secondary-light;
-            .page-link {
-              color: $theme-gray-light;
-            }
-          }
-        }
-        .page-link {
+          .page-link {
             color: $theme-gray-light;
             line-height: $base-line-height;
             letter-spacing: 3px;
@@ -121,130 +114,86 @@ p {
                 margin-top: 18px;
             }
             &:hover {
+              background-color: $theme-secondary-light;
               text-decoration: none;
             }
+          }
         }
       }
     }
 
-    .nav-footer {
-      bottom: 0;
-      position:absolute;
-      display: block;
-      padding: $spacing-unit 0;
-      width: 100%;
-      max-height: 200px;
-      .contact {
-          .author-link {
-            text-decoration: none;
-            color: $theme-gray-light;
-            margin-bottom: 0;
-            .author {
-              text-align: center;
-            }
-            &:hover {
-              text-decoration: underline;
-            }
-          }
-          .rss-subscribe {
-            width: 100%;
-            text-align: center;
-            color: $theme-gray-light;
-            a:hover {
-              color: $theme-gray-light;
-              text-decoration: none;
-            }
-            a {
-              text-decoration: underline;
-              color: $theme-secondary-light;
-            }
-          }
-          .social-media-list {
-            position: relative;
-            margin:0 auto 0 auto;
-            text-align: center;
-            list-style: none;
-            :hover {
-              text-decoration: underline;
-            }
-            .svg {
-              color: $theme-gray-light;
-              path {
-                  fill: $theme-gray-light;
-              }
-            }
-            .username {
-              color: $theme-gray-light;
-            }
-          }
+  .nav-footer {
+    bottom: 0;
+    position:absolute;
+    display: block;
+    padding: $spacing-unit 0;
+    width: 100%;
+    max-height: 200px;
+    .contact {
+      .author-link {
+        text-decoration: none;
+        color: $theme-gray-light;
+        margin-bottom: 0;
+        .author {
+          text-align: center;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .rss-subscribe {
+        width: 100%;
+        text-align: center;
+        color: $theme-gray-light;
+        a:hover {
+          color: $theme-gray-light;
+          text-decoration: none;
+        }
+        a {
+          text-decoration: underline;
+          color: $theme-secondary-light;
+        }
       }
     }
-
-    @include media-query($on-palm) {
-        // position: fixed;
-        // top:0;
-        // right:0;
-        // left:0;
-        // bottom:auto;
-        // background-color: $theme-primary;
-        // border: 1px solid $theme-gray-light;
-        // border-radius: 5px;
-        // text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: left;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 20px;
-            padding-left: 20px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $theme-gray-light;
-                }
-            }
-        }
-        .logo-wrapper {
-          a {
-            .logo {
-              display:none;
-            }
-          }
-        }
-        .site-title {
-        }
-        .nav-menu {
-          // display:none;
-        }
-
-        &:hover .nav-menu {
-            display: block;
-            padding-top: 0px;
-            padding-bottom: 0px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
-        .nav-footer {
-          // display: none;
-        }
-    }
-    @include media-query($on-tablet) {
-      .navbar-header {
-        float:none;
-      }
-    }
-
+  }
 }
-
+.social {
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  color: #EEEEEE;
+  a {
+    color: #EEEEEE;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #EEEEEE;
+    text-decoration: none;
+  }
+  .fa {
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .fb:hover {
+    color: #3B5998;
+  }
+  .tw:hover {
+    color: #55ACEE;
+  }
+  .gp:hover {
+    color: #DD4B39;
+  }
+  .li:hover {
+    color: #0077B5;
+  }
+  .su:hover {
+    color: #EB4924;
+  }
+  .gh:hover {
+    color: #4078c0;
+  }
+}
 /**
  * Site simple-footer
  */
