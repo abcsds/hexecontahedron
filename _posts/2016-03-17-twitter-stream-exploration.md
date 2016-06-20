@@ -152,7 +152,7 @@ df.plot(figsize=(16, 8)) # Plot the sentiment as a time series
 ```
 
 
-![png](/app/img/notebooks/twitter01.png)
+![png]({{ site.static_folder }}/img/notebooks/twitter01.png)
 
 
 
@@ -161,7 +161,7 @@ df['sentiment'].plot.kde(figsize=(16, 8))
 ```
 
 
-![png](/app/img/notebooks/twitter02.png)
+![png]({{ site.static_folder }}/img/notebooks/twitter02.png)
 
 
 ### Mining text
@@ -286,4 +286,4 @@ df[['red','green','blue']].sum()
 df[['red','green','blue']].sum().plot(kind='bar',color=['r','g','b'],figsize=(16, 8))
 ```
 
-![png](/app/img/notebooks/twitter03.png)
+![png]({{ site.static_folder }}/img/notebooks/twitter03.png)

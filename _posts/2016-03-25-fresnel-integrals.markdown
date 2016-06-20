@@ -28,7 +28,7 @@ plt.plot(t, x, t, y)
 plt.show()
 ```
 
-![Fresnel Integral](/app/img/notebooks/fresnel-integral.png)
+![Fresnel Integral]({{ site.static_folder }}/img/notebooks/fresnel-integral.png)
 
 
 ## Euler spiral
@@ -44,7 +44,7 @@ plt.show()
 ```
 
 
-![Half Euler Spiral](/app/img/notebooks/half-eulers-spiral.png)
+![Half Euler Spiral]({{ site.static_folder }}/img/notebooks/half-eulers-spiral.png)
 
 
 ```python
@@ -56,4 +56,4 @@ plt.show()
 ```
 
 
-![Euler Spiral](/app/img/notebooks/eulers-spiral.png)
+![Euler Spiral]({{ site.static_folder }}/img/notebooks/eulers-spiral.png)

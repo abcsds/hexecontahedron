@@ -4,10 +4,11 @@ author: Alberto Barradas
 description: > #
   Cognitive Science, Data Science, Open Data, Sociology, Psichology, Computer Neuroscience, Math, and Engineering: This is my personal notebook, you can find notes of the stuff I do and want to share.
 url: "hexecontahedron.com"
-image: "http://hexecontahedron.com/app/img/hexe-small.png"
+image: "http://hexecontahedron.com/static/img/hexe-small.png"
 twitter_username: abcsds
 github_username:  abcsds
 personal_website: "http://AlbertoBarradas.com"
+static_folder: '/static'
 
 # Build settings
 markdown: kramdown
