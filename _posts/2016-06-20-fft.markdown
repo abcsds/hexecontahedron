@@ -1,0 +1,222 @@
+---
+layout: post
+title: "Fast Fourier Transform"
+date: "2016-06-20 22:21:30 -0500"
+comments: true
+tags: notebook, ipython, FFT, Fourier
+image: "{{ site.static_folder }}/img/DeepDream/beto.png"
+---
+
+The Fourier transform is a wonder of modern days. It lets us decompose any harmonic signal into it's components, converting time to frequency. If signals were a cooked meal, the Fourier transform would be able to tell us all the ingredients! For its use in the common digital world, it's faster version is used: the Fast Fourier Transform (FFT).
+
+### Definition
+The Fast Fourier Transform of a discrete periodical function $f(x)$ is defined as:
+
+$$ X_k = \sum_{n=0}^{N-1} x_n e^{-i2\pi{k}\frac{n}{N}} \quad k = 0,\dots,N-1 $$
+
+This sum is equivalent to a continuos integral, but lets us do the calculation on a discrete signal (a signal made by small steps, like all in your computer)
+
+We'll play arround with it on an ipython notebook:
+
+
+```python
+%matplotlib inline
+import numpy as np
+import matplotlib.pyplot as plt
+```
+
+As always, importing the correct libraries is due.
+
+Next we'll use a simple signal to play with: a sine.
+
+
+```python
+t = np.arange(0,4*np.pi,0.1) # Our range will be from 0 to 4π in steps of 0.1
+x = np.sin(t)                # This is the function we,re playing with
+
+# And we plot our function
+plt.figure(figsize=(16,5))
+plt.plot(t,x,'r')
+plt.show()
+```
+
+
+![A sine plot]({{ site.static_folder }}/img/FFT/sineRed.png)
+
+Here comes the magic; Implementing the equation above in a for loop and plotting a transparent blue line on every loop we can see how the sum progresses to show us what the frequencies of the sine are.
+
+```python
+t = np.arange(0,4*np.pi,0.1)
+x = np.sin(t)        # Func
+N = len(t)
+k = np.arange(N)
+s = [0]*N
+
+plt.figure(figsize=(16,8))
+for n,xn in zip(t,x):
+    s += xn*np.exp(0-2j*np.pi*k*n/N)
+    plt.plot(t,np.absolute(s),'b',alpha=0.2)
+plt.plot(t,x,'r') # Show the original signal
+plt.plot(t,np.absolute(s),'g') # Show the last iteration of the FFT
+plt.show()
+```
+
+
+![Simple FFT plot]({{ site.static_folder }}/img/FFT/simple_fft.png)
+
+
+And this is how the art shows itself in math. Of course this is an approximation, and won't look very accurate. If you want accuracy you should increase the number of iterations:
+
+
+```python
+t = np.arange(0,40*np.pi,0.1)
+x = np.sin(t)        # Func
+N = len(t)
+k = np.arange(N)
+s = [0]*N
+
+plt.figure(figsize=(16,8))
+for n,xn in zip(t,x):
+    s += xn*np.exp(0-2j*np.pi*k*n/N)
+    plt.plot(t,np.absolute(s),'b',alpha=0.01)
+plt.plot(t,x,'r')
+plt.plot(t,np.absolute(s),'g')
+# plt.ylim(-6,6)
+plt.show()
+```
+
+
+![Detailed FFT]({{ site.static_folder }}/img/FFT/detailed_fft.png)
+
+
+The result of this approximation shows the harmonics of the signal: frequencies that are a multiple of the main frequency. It's easier to see them on the next plot:
+
+
+```python
+s = s[:int(len(s)/2)]        # Only real part of freq
+k = k[:int(len(k)/2)] / 100  # Steps are a tenth and frequency is multiplied by ten
+plt.figure(figsize=(16,5))
+plt.plot(k,np.absolute(s))
+# plt.ylim(-6,6)
+plt.show()
+# Result in hertz
+```
+
+
+![Harmonics of FFT]({{ site.static_folder }}/img/FFT/harmonics.png)
+
+
+You might have noticed that we are only plotting the absolute value of the result. That's because the FFT operates on the complex plane. It's result is composed of two other signals:
+
+
+```python
+t = np.arange(0,4*np.pi,0.1)
+x = np.sin(t)        # Func
+N = len(t)
+k = np.arange(N)
+s = [0]*N
+
+plt.figure(figsize=(16,8))
+for n,xn in zip(t,x):
+    s += xn*np.exp(0-2j*np.pi*k*n/N)
+    plt.plot(t,s.real,'b',alpha=0.1) # The real part on blue
+    plt.plot(t,s.imag,'y',alpha=0.1) # The imaginary part on yellow
+plt.plot(t,np.absolute(s),'g')       # The result in green
+plt.show()
+```
+
+
+![Decomposed FFT]({{ site.static_folder }}/img/FFT/decomposed_fft.png)
+
+
+### Complex plot of series progression
+Here is an interesting idea; Why not plot the signal on the complex plane? The next plot has imaginary numbers on the y axis, and real on the x axis.
+
+
+```python
+t = np.arange(0,4*np.pi,0.1)
+x = np.sin(t)        # Func
+N = len(t)
+k = np.arange(N)
+s = [0]*N
+
+plt.figure(figsize=(10,10))
+for n,xn in zip(t,x):
+    s += xn*np.exp(0-2j*np.pi*k*n/N)
+    plt.plot(s.real,s.imag,'g',alpha=0.1)
+plt.show()
+```
+
+
+![Complex Plot of Sine]({{ site.static_folder }}/img/FFT/complex_sine_real_fft.png)
+
+
+And here is what the FFT of negative time looks like: (There is no such thing as negative time, though, this is only a mathematical representation)
+
+
+```python
+t = np.arange(-2*np.pi,2*np.pi,0.1)
+x = np.sin(t)        # Func
+N = len(t)
+k = np.arange(N)
+s = [0]*N
+
+plt.figure(figsize=(10,10))
+for n,xn in zip(t,x):
+    s += xn*np.exp(0-2j*np.pi*k*n/N)
+    plt.plot(s.real,s.imag,'g',alpha=0.1)
+plt.show()
+```
+
+
+![Sine complex FFT plot]({{ site.static_folder }}/img/FFT/sin_complex_fft.png)
+
+
+Let's try it with another function, the Hyperbolic Tangent:
+
+
+```python
+t = np.arange(-2*np.pi,2*np.pi,0.1)
+x = np.tanh(t)        # Func
+N = len(t)
+k = np.arange(N)
+s = [0]*N
+
+plt.figure(figsize=(10,10))
+for n,xn in zip(t,x):
+    s += xn*np.exp(0-2j*np.pi*k*n/N)
+    plt.plot(s.real,s.imag,'g',alpha=0.1)
+plt.show()
+```
+
+
+![Tanh complex FFT plot]({{ site.static_folder }}/img/FFT/tanh_complex_fft.png)
+
+
+And why not, the cosine:
+
+
+```python
+t = np.arange(-2*np.pi,2*np.pi,0.1)
+x = np.cos(t)        # Func
+N = len(t)
+k = np.arange(N)
+s = [0]*N
+
+plt.figure(figsize=(10,10))
+for n,xn in zip(t,x):
+    s += xn*np.exp(0-2j*np.pi*k*n/N)
+    plt.plot(s.real,s.imag,'g',alpha=0.1)
+# plt.ylim(-6,6)
+# plt.plot(s.real,s.imag,'b')
+plt.show()
+```
+
+
+![Cosine complex FFT plot]({{ site.static_folder }}/img/FFT/cos_complex_fft.png)
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
