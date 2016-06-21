@@ -2,6 +2,7 @@
 layout: post
 title: "Twitter Stream Exploration"
 date: "2016-03-17 17:35:59 -0600"
+comments: true
 tags: notebook, english, twitter, exploration
 ---
 Twitter is a great source of live data, which can be used in many different areas, all concurring to the core of it's functionality: social data. In this exploratory analysis I will go from extracting twitter data to doing some basic analysis on it.

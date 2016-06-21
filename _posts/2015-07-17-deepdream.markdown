@@ -2,13 +2,14 @@
 layout: post
 title: "DeepDream"
 date: "2015-07-17 12:40:06 -0600"
+comments: true
 tags: google, deepdream, vagrant, ai, english
 ---
 No cognitivist could avoid noticing google's new demonstrations on Deep Learning posted on their [research blog](http://googleresearch.blogspot.mx/2015/06/inceptionism-going-deeper-into-neural.html) this june. Images all over the web like those on google's own [gallery](https://photos.google.com/share/AF1QipPX0SCl7OzWilt9LnuQliattX4OUCj_8EP65_cTVnBmS1jnYgsGQAieQUc1VQWdgQ?key=aVBxWjhwSzg2RjJWLWRuVFBBZEN1d205bUdEMnhB) showing what artificial neural networks "see" when trying to make sense of images make everyone wonder how could a machine make such beautiful, weird, and surprisingly familiar images.
 
 ### Running Google's DeepDream
 
-So many people from so many different backgrounds, from scientists to artists, have been so interested in google's deepdreaming that the company decided to open their code. The repo can now be found as an IPython notebook on [github](https://github.com/google/deepdream) so anyone and everyone can have their own deeplearning nerual network, **UPDATE** Now thanks to [Gary Arnold's](https://github.com/Dhar) [Image-dreamer Vagrant Box](https://github.com/Dhar/image-dreamer) it's even easier to get experimenting with your own images.
+So many people from so many different backgrounds, from scientists to artists, have been so interested in google's deepdreaming that the company decided to open their code. The repo can now be found as an IPython notebook on [github](https://github.com/google/deepdream) so anyone and everyone can have their own deeplearning nerual network, and now thanks to [Gary Arnold's](https://github.com/Dhar) [Image-dreamer Vagrant Box](https://github.com/Dhar/image-dreamer) it's even easier to get experimenting with your own images.
 
 All you need is [VirtualBox](https://www.virtualbox.org/) and [Vagrant](https://www.vagrantup.com) to run the virtual machine that installs all the dependencies. If you want to see exactly what dependencies are installed, you can check out the [Vagratfile](https://raw.githubusercontent.com/Dhar/image-dreamer/master/Vagrantfile)
 
@@ -32,9 +33,10 @@ The layer's names are specified in the std output when you run the network. The 
 Here is an example of how an image might look after running through this network:
 
 ![Original Image]({{ site.static_folder }}/img/DeepDream/orig.jpg)
+On top you can see the original image; a picture my friend [Federico](https://twitter.com/tejonBiker) made with his raspberryPI, and on the bottomp the converted image.
+
 ![Eyed Image]({{ site.static_folder }}/img/DeepDream/eyes.jpg)
 
-On top you can see the original image; a picture my friend [Federico](https://twitter.com/tejonBiker) made with his raspberryPI, and on the bottomp the converted image.
 
 Another option is running the network to output on the `inception_3c/output` layer, which seems to be sensible curves and contours. You do this by adding the name of the layer you wish to output right after the output image when running the script:
 
