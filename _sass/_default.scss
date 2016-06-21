@@ -35,6 +35,10 @@ p {
   .page-content {
     position: absolute;
     margin-right: -300px;
+    width: calc(100% - 300px);
+    .content-wrapper {
+      // max-width: calc(100% - 300px);
+    }
   }
   #menu-toggle {
     // display: none; TODO: show and hide button
@@ -57,6 +61,11 @@ nav {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  a {
+    :hover {
+      color: $theme-gray-light;
+    }
+  }
   ul {
     // position: absolute;
     top: 0;
@@ -111,6 +120,35 @@ nav {
     }
     a {
       color: $theme-gray-light;
+    }
+  }
+
+  #nav-footer {
+    .contact {
+      .author {
+        text-align: center;
+        .author-link {
+          text-decoration: none;
+          color: $theme-gray-light;
+          margin-bottom: 0;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .rss-subscribe {
+        width: 100%;
+        text-align: center;
+        color: $theme-gray-light;
+        a:hover {
+          color: $theme-gray-light;
+          text-decoration: none;
+        }
+        a {
+          text-decoration: underline;
+          color: $theme-secondary-light;
+        }
+      }
     }
   }
 }
@@ -335,7 +373,8 @@ nav {
     }
     .page-content {
       position: relative;
-        margin-right: 0;
+      margin-right: 0;
+      width: calc(100% - 300px);
     }
   }
   nav {

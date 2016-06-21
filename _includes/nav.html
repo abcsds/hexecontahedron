@@ -22,11 +22,16 @@
         <li><a class="page-link" href="http://{{ site.url }}/search">Search</a></li>
       </ul>
     </div><!-- /.nav-menu -->
-
-    <!-- <div class="nav-footer pull-down">
+<br>
+    <div id="nav-footer">
       <div class="contact">
-        <a class="author-link" href="{{ site.personal_website }}"><h4 class="author">{{ site.author }}</h4></a>
-        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+        <h4 class="author">
+          <a class="author-link" href="{{ site.personal_website }}">{{ site.author }}</a>
+        </h4>
+        <p class="rss-subscribe">
+          Subscribe
+          <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>
+        </p>
         <p class="social">
           <a href="https://github.com/{{ site.github_username }}">
             <i class="fa fa-2x fa-github gh" aria-hidden="true"></i>
@@ -38,8 +43,8 @@
             <i class="fa fa-2x fa-google-plus-official gp" aria-hidden="true"></i>
           </a>
         </p>
-      </div>
-    </div> -->
+      </div> <!-- /.contact -->
+    </div> <!-- /#nav-footer -->
   </div> <!-- /#sidebar-wrapper -->
 </nav>
 <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
