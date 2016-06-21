@@ -9,7 +9,6 @@
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
-  <link rel="icon" type="image/png" href="{{ "/img/favicon.png" | preapend site.static_folder }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
@@ -18,6 +17,29 @@
   <script src="{{ site.static_folder }}/js/jquery.js"></script>
   <script src="{{ site.static_folder }}/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="{{ "/js/main.js" | prepend: site.static_folder | prepend: site.baseurl }}"></script>
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ site.static_folder }}/fav/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ site.static_folder }}/fav/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ site.static_folder }}/fav/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ site.static_folder }}/fav/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ site.static_folder }}/fav/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ site.static_folder }}/fav/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ site.static_folder }}/fav/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ site.static_folder }}/fav/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.static_folder }}/fav/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="{{ site.static_folder }}/fav/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ site.static_folder }}/fav/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="{{ site.static_folder }}/fav/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="{{ site.static_folder }}/fav/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="{{ site.static_folder }}/fav/manifest.json">
+  <link rel="mask-icon" href="{{ site.static_folder }}/fav/safari-pinned-tab.svg" color="#276162">
+  <link rel="shortcut icon" href="{{ site.static_folder }}/fav/favicon.ico">
+  <meta name="msapplication-TileColor" content="#276162">
+  <meta name="msapplication-TileImage" content="{{ site.static_folder }}/fav/mstile-144x144.png">
+  <meta name="msapplication-config" content="{{ site.static_folder }}/fav/browserconfig.xml">
+  <meta name="theme-color" content="#276162">
+
   <!-- Custom Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
