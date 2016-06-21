@@ -1,16 +1,16 @@
 
-/**
- * Page content
- */
-.page-content {
-    padding-top: $spacing-unit;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 300px;
-    @include media-query($on-palm) {
-        margin-left: 0px;
-    }
-}
+// /**
+//  * Page content
+//  */
+// .page-content {
+//     padding-top: $spacing-unit;
+//     padding-left: 0;
+//     padding-right: 0;
+//     margin-left: 300px;
+//     @include media-query($on-palm) {
+//         margin-left: 0px;
+//     }
+// }
 
 .page-heading {
     font-size: 38px;

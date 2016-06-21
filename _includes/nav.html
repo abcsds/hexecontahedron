@@ -1,12 +1,5 @@
-<nav class="site-nav navbar" id="my-menu">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+<nav>
+  <div id="sidebar-wrapper">
       <div class="logo-wrapper">
         <a href="http://{{ site.url }}">
           <img class="logo img-responsive" src="{{ site.static_folder }}/img/hexecontahedron.png" alt="{{ site.title }}">
@@ -17,10 +10,9 @@
           {{ site.title }}
         </a>
       </div>
-    </div><!-- /.navbar-header -->
 
     <div class="nav-menu">
-      <ul class="nav navbar-nav pages">
+      <ul>
         <li><a class="page-link" href="http://{{ site.url }}">Home</a></li>
         {% for page in site.pages %}
           {% if page.title %}
@@ -31,7 +23,7 @@
       </ul>
     </div><!-- /.nav-menu -->
 
-    <div class="nav-footer pull-down">
+    <!-- <div class="nav-footer pull-down">
       <div class="contact">
         <a class="author-link" href="{{ site.personal_website }}"><h4 class="author">{{ site.author }}</h4></a>
         <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
@@ -46,7 +38,8 @@
             <i class="fa fa-2x fa-google-plus-official gp" aria-hidden="true"></i>
           </a>
         </p>
-      </div> <!--  /.contact -->
-    </div> <!--  /.nav-footer -->
-  </div> <!-- /.container fluid  -->
+      </div>
+    </div> -->
+  </div> <!-- /#sidebar-wrapper -->
 </nav>
+<a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
