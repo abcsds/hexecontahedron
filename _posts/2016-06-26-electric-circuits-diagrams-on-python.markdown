@@ -29,7 +29,7 @@ d.draw()
 ![circuit]({{ site.static_folder }}/img/circuits/example.png)
 
 
-As you can see, you add elements to the cirucit one by one. The standard elements are contained in the module SchemDraw.elements, and the position of every element is given by a start and end point:
+As you can see, you add elements to the circuit one by one. The standard elements are contained in the module SchemDraw.elements, and the position of every element is given by a start and end point:
 
 
 ```python
