@@ -23,7 +23,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
-For this simulation we will use a 10K resistance, a 10mF capacitor, and a 10V source. The curcuit will then look like this:
+For this simulation we will use a 10K resistance, a 10mF capacitor, and a 10V source. The circuit will then look like this:
 
 
 ```python
