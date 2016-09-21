@@ -7,9 +7,9 @@ tags: julia, montecarlo, pi
 image: "{{ site.static_folder }}/img/favicon.png"
 ---
 
-I was recently A montecarlo aproximation relies on large random sampling to obtain numeric results. This is, guiven a known distribution of data, can you aproximate a numeric value? You can read more about it [here](https://en.wikipedia.org/wiki/Monte_Carlo_method).
+A montecarlo aproximation relies on large random sampling to obtain numeric results. This is, guiven a known distribution of data, can you aproximate a numeric value? You can read more about it [here](https://en.wikipedia.org/wiki/Monte_Carlo_method).
 
-A simple demonstration of this is finding pi: Guiven a circle of radius $r$ inside a square of sides length $2r$, if you throw a large number of random points inside the square, and knowing the equations for the area of both the circle and the square you can find pi with the following equation:
+A simple demonstration of this is finding pi: Guiven a circle of radius \(r\) inside a square of sides length \(2r\), if you throw a large number of random points inside the square, and knowing the equations for the area of both the circle and the square you can find pi with the following equation:
 
 $$ \pi = 4 * \frac{\text{(Number of Darts in Circle)}}{\text{(Number of Darts in Square)}} $$
 
