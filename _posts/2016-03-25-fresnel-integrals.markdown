@@ -3,6 +3,8 @@ layout: post
 title: "Fresnel Integrals"
 date: "2016-03-25 00:47:00 -0600"
 comments: true
+tags: physics , visualization
+image: "{{ site.static_folder }}/img/notebooks/fresnel-integral.png"
 ---
 Named after [Augustin-Jean Fresnel](https://en.wikipedia.org/wiki/Augustin-Jean_Fresnel) Fresnel integrals are:
 

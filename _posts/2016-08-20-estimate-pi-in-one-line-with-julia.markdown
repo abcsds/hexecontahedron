@@ -3,7 +3,7 @@ layout: post
 title: "Estimate Pi in one line with Julia"
 date: "2016-08-20 14:45:49 -0500"
 comments: true
-tags: julia, montecarlo, pi
+tags: julia , montecarlo , pi
 image: "{{ site.static_folder }}/img/favicon.png"
 ---
 

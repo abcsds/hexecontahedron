@@ -3,7 +3,7 @@ layout: post
 title: "Electric Circuits Diagrams on Python"
 date: "2016-06-26 08:05:50 -0500"
 comments: true
-tags: python, electric circuits
+tags: python , electric circuits
 image: "{{ site.static_folder }}/img/circuits/example.png"
 ---
 

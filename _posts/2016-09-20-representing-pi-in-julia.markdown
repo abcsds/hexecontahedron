@@ -3,7 +3,7 @@ layout: post
 title: "Representing pi in Julia"
 date: "2016-09-20 12:37:52 -0500"
 comments: true
-tags: julia, pi
+tags: julia , pi
 image: "{{ site.static_folder }}/img/julia/logo.png"
 ---
 

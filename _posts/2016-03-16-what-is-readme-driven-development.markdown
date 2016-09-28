@@ -3,7 +3,7 @@ layout: post
 title: "What is Readme Driven Development?"
 date: "2016-03-16 16:18:40 -0600"
 comments: true
-tags: development, english
+tags: development , english
 ---
 *Readme Driven Development* or RDD, is a development process where you start your projects by writing the `README` file. Sounds logical, right?
 

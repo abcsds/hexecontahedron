@@ -3,7 +3,7 @@ layout: post
 title: "Polynomial Roots"
 date: "2016-06-21 23:28:05 -0500"
 comments: true
-tags: notebook, ipython, polynomials, roots
+tags: notebook , ipython , polynomials , roots
 image: "{{ site.static_folder }}/img/PolyRoots/complex_roots.png"
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "Fast Fourier Transform"
 date: "2016-06-20 22:21:30 -0500"
 comments: true
-tags: notebook, ipython, FFT, Fourier
+tags: notebook , ipython , FFT , Fourier
 image: "{{ site.static_folder }}/img/DeepDream/beto.png"
 ---
 

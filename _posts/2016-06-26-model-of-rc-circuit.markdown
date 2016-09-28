@@ -3,7 +3,7 @@ layout: post
 title: "Model of RC circuit"
 date: "2016-06-26 09:05:54 -0500"
 comments: true
-tags: python, electric circuits, capacitor, rc
+tags: python , electric circuits , capacitor , rc
 image: "{{ site.static_folder }}/img/circuits/rc.png"
 ---
 

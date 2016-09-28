@@ -3,7 +3,7 @@ layout: post
 title: "DeepDream"
 date: "2015-07-17 12:40:06 -0600"
 comments: true
-tags: google, deepdream, vagrant, ai, english
+tags: google , deepdream , vagrant , ai , english
 image: "{{ site.static_folder }}/img/DeepDream/beto.png"
 ---
 No cognitivist could avoid noticing google's new demonstrations on Deep Learning posted on their [research blog](http://googleresearch.blogspot.mx/2015/06/inceptionism-going-deeper-into-neural.html) this june. Images all over the web like those on google's own [gallery](https://photos.google.com/share/AF1QipPX0SCl7OzWilt9LnuQliattX4OUCj_8EP65_cTVnBmS1jnYgsGQAieQUc1VQWdgQ?key=aVBxWjhwSzg2RjJWLWRuVFBBZEN1d205bUdEMnhB) showing what artificial neural networks "see" when trying to make sense of images make everyone wonder how could a machine make such beautiful, weird, and surprisingly familiar images.
